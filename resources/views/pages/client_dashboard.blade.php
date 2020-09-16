@@ -28,9 +28,7 @@
                 <thead>
                   <tr>
                     <th>Job title</th>
-                    <th>Position filled</th>
-                    <th>Date posted</th>
-                    <th>Date expiring</th>
+                    
                     <th>Applicants</th>
                     <th>Actions</th>
                   </tr>
@@ -39,62 +37,21 @@
                   <tr>
                     <th><a href="{{ route('client-job')}}">Webdesigner</a>
                     </th>
-                    <td> <span class="badge badge-success">Filled</span>
-                    </td>
-                    <td>21/10/2017</td>
-                    <td>31/12/2017</td>
+                  
+                    
                     <td> <a href="{{ route('client-applicants')}}" class="btn btn-success"> <i class="fa fa-users"></i>{{$apply}} <span class="hidden-xs hidden-sm">Applicants</span></a>
                     </td>
+
+
                     <td> 
                       <a href="{{ route('client-job')}}" class="btn btn-outline-white-secondary"> <i class="fa fa-edit"></i>Edit</a><br>
                       <a href="#" class="btn btn-outline-white-secondary"> <i class="fa fa-check-circle-o"></i><span class="hidden-xs hidden-sm">Mark as </span>filled</a><br>
                       <a href="#" class="btn btn-outline-white-secondary"> <i class="fa fa-times-circle-o"></i>Delete</a>
                     </td>
                   </tr>
-                  <tr>
-                    <th><a href="{{ route('client-job')}}">Front End developer</a><br /><span class="badge badge-info">Featured</span>
-                    </th>
-                    <td> <span class="badge badge-secondary">Not Filled</span>
-                    </td>
-                    <td>10/10/2017</td>
-                    <td>16/11/2017</td>
-                    <td> 
-                    </td>
-                    <td> <a href="{{ route('client-job')}}" class="btn btn-outline-white-secondary"> <i class="fa fa-edit"></i>Edit</a><br><a href="#" class="btn btn-outline-white-secondary"> <i class="fa fa-check-circle-o"></i><span class="hidden-xs hidden-sm">Mark as </span>filled</a><br><a href="#" class="btn btn-outline-white-secondary"> <i class="fa fa-times-circle-o"></i>Delete</a></td>
-                  </tr>
-                  <tr>
-                    <th><a href="{{ route('client-job')}}">Webdesigner</a>
-                    </th>
-                    <td> <span class="badge badge-secondary">Not Filled</span>
-                    </td>
-                    <td>30/10/2017</td>
-                    <td>30/11/2017</td>
-                    <td> <a href="{{ route('client-applicants')}}" class="btn btn-success"> <i class="fa fa-users"></i>4 <span class="hidden-xs hidden-sm">Applicants</span></a>
-                    </td>
-                    <td> <a href="{{ route('client-job')}}" class="btn btn-outline-white-secondary"> <i class="fa fa-edit"></i>Edit</a><br><a href="#" class="btn btn-outline-white-secondary"> <i class="fa fa-check-circle-o"></i><span class="hidden-xs hidden-sm">Mark as </span>filled</a><br><a href="#" class="btn btn-outline-white-secondary"> <i class="fa fa-times-circle-o"></i>Delete</a></td>
-                  </tr>
-                  <tr>
-                    <th><a href="{{ route('client-job')}}">Team Leader</a><br /><span class="badge badge-info">Featured</span>
-                    </th>
-                    <td> <span class="badge badge-secondary">Not Filled</span>
-                    </td>
-                    <td>19/02/2017</td>
-                    <td>31/10/2017</td>
-                    <td> <a href="{{ route('client-applicants')}}" class="btn btn-success"> <i class="fa fa-users"></i>4 <span class="hidden-xs hidden-sm">Applicants</span></a>
-                    </td>
-                    <td> <a href="{{ route('client-job')}}" class="btn btn-outline-white-secondary"> <i class="fa fa-edit"></i>Edit</a><br><a href="#" class="btn btn-outline-white-secondary"> <i class="fa fa-check-circle-o"></i><span class="hidden-xs hidden-sm">Mark as </span>filled</a><br><a href="#" class="btn btn-outline-white-secondary"> <i class="fa fa-times-circle-o"></i>Delete</a></td>
-                  </tr>
-                  <tr>
-                    <th><a href="{{ route('client-job')}}">Software Engineer</a>
-                    </th>
-                    <td> <span class="badge badge-secondary">Not Filled</span>
-                    </td>
-                    <td>21/10/2017</td>
-                    <td>31/11/2017</td>
-                    <td> 
-                    </td>
-                    <td> <a href="{{ route('client-job')}}" class="btn btn-outline-white-secondary"> <i class="fa fa-edit"></i>Edit</a><br><a href="#" class="btn btn-outline-white-secondary"> <i class="fa fa-check-circle-o"></i><span class="hidden-xs hidden-sm">Mark as </span>filled</a><br><a href="#" class="btn btn-outline-white-secondary"> <i class="fa fa-times-circle-o"></i>Delete</a></td>
-                  </tr>
+
+
+                  
                 </tbody>
               </table>
             </div>

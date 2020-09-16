@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Job extends Model
 {
     protected $table = 'jobs';
-    // protected $primaryKey = 'jobs';
+    protected $primaryKey = 'id';
 
     protected $fillable = ['category_id', 'tag_id', 'type_id', 'job_title', 'job_description', 'location', 'logo'];
 

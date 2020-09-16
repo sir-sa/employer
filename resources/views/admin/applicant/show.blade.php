@@ -50,7 +50,8 @@
                     <td> <span class="">{{$file->address}}</span></td>
                     <td> <span class="">{{$file->job_title}}</span></td>
                     <td> <span class=""> <a href="{{route('applicants.show',$file->id)}}">view CV</a></span></td>
-                    <td> <span class=""> <a href="/asset/upload/{{$file->file}}">Download CV</a></span></td>
+                    <td> <span class=""> 
+                      <a href="/asset/upload/{{$file->file}}">Download CV</a></span></td>
 
                     
                     <td> 

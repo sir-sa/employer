@@ -56,6 +56,9 @@ Route::resource('jobs', 'JobController');
 // this is handled by the USER
 Route::resource('applicants', 'ApplicationController');
 
+//this is the posts route
+Route::resource('post', 'PostController');
+
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-user')->group(function(){
 	Route::resource('/users', 'UserController',['except'=>['show', 'create', 'store']]);

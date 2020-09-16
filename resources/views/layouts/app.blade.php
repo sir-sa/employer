@@ -57,10 +57,10 @@
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item active"><a href="{{ route('home')}}" class="nav-link">Jobs <span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a href="{{ route('about')}}" class="nav-link">About Us</a></li>
+               @can('manage-user')
               <li class="nav-item dropdown"><a id="clientZone" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Client Zone</a>
                 <div aria-labelledby="clientZone" class="dropdown-menu">
-                  
-                  <a href="{{ route('client-dashboard')}}" class="dropdown-item">Dashboard</a>
+                
                   <a href="{{ route('client-applicants')}}" class="dropdown-item">Applicants                </a>
                   <a href="{{ route('jobs.create')}}" class="dropdown-item">Post a new job  </a>
                   <a href="{{ route('categories.index')}}" class="dropdown-item">Jobs Category List </a>
@@ -68,6 +68,7 @@
                   <a href="{{ route('jobtags.index')}}" class="dropdown-item">Job skills required  </a>
                 </div>
               </li>
+               @endcan
               <li class="nav-item dropdown"><a id="pages" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Pages</a>
                 <div aria-labelledby="pages" class="dropdown-menu">
                   <a href="{{ route('index')}}" class="dropdown-item">Home</a>
@@ -128,7 +129,8 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+          
+          @yield('content')
         </main>
     </div>
 
@@ -178,7 +180,11 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-5">
               <h4 class="h5">Let's be Friends</h4>
-              <p class="social"><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
+              <p class="social">
+                <a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a>
+                <a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
             </div>
             <div class="col-lg-4 col-md-12 mb-5">
               <h4 class="h5">News and Updates</h4>
@@ -202,7 +208,7 @@
               <p>&copy;2020 Best company</p>
             </div>
             <div class="col-md-6 text-md-right text-center">
-              <p class="credit">Theme by <a href="https://bootstrapious.com/">Bootstrapious</a></p>
+              <p class="credit">Website by <a href="https://bootstrapious.com/">Sammy</a></p>
             </div>
           </div>
         </div>
@@ -225,6 +231,20 @@
       <p><img src="{{ asset('assets/img/template-mac.png')}}" alt="" class="img-fluid"></p>
       <p class="text-muted text-small">Stylesheet switching is done via JavaScript and can cause a blink while page loads. This will not happen in your production code.</p>
     </div>
+
+    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+   </script>
+
+   <script type="text/javascript">
+    CKEDITOR.replace('wysiwyg-editor', {
+        filebrowserUploadUrl: "{{route('post.store')}}",
+        filebrowserUploadMethod: 'POST'
+    });
+   </script>
     <!-- JavaScript files-->
     <script src="{{ asset('assets/vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

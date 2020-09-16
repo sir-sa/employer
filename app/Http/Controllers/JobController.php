@@ -21,7 +21,7 @@ class JobController extends Controller
     {
         $jobs = Job::paginate(10);
         $categories = Category::all();
-        return view('admin.jobs.index', compact('jobs', 'categories'));
+        return view('admin.jobs.show', compact('jobs', 'categories'));
     }
 
     /**
@@ -77,7 +77,8 @@ class JobController extends Controller
         $jobs->location = $request->input('location');
         $jobs-> save();
 
-        return redirect()->route('jobs.index');
+        return redirect()->back();
+       
 
 
 

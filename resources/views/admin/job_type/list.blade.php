@@ -43,12 +43,13 @@
                     </th>
                     
                     <td> 
-                      
-                      <form action="{{route('jobtypes.destroy',$type->id)}}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                         <button type="submit" class="btn btn-outline-white-secondary"> <i class="fa fa-times-circle-o"></i>Delete</button>
-                       </form>
+                      @can('manage-user')
+                        <form action="{{route('jobtypes.destroy',$type->id)}}" method="POST">
+                          @csrf
+                          @method('DELETE')
+                           <button type="submit" class="btn btn-outline-white-secondary"> <i class="fa fa-times-circle-o"></i>Delete</button>
+                        </form>
+                       @endcan
                      
                   </tr>
                   @empty

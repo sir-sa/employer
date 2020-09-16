@@ -52,7 +52,7 @@
                   
 
                   <h4 class="job__title">
-                    <a href="">
+                    <a href="{{route('jobs.show', $category->id)}}">
                       
                         {{$category->name}}
                       

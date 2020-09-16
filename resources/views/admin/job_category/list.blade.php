@@ -51,12 +51,13 @@
                     </td>
                     
                     <td> 
-                      
-                     <form action="{{route('categories.destroy',$category->id)}}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                         <button type="submit" class="btn btn-outline-white-secondary"> <i class="fa fa-times-circle-o"></i>Delete</button>
-                       </form>
+                      @can('manage-user')
+                        <form action="{{route('categories.destroy',$category->id)}}" method="POST">
+                          @csrf
+                          @method('DELETE')
+                           <button type="submit" class="btn btn-outline-white-secondary"> <i class="fa fa-times-circle-o"></i>Delete</button>
+                        </form>
+                      @endcan
                       
                   </tr>
                   @empty

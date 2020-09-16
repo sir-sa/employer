@@ -21,60 +21,38 @@
     <section>
       <div class="container">
         <div class="row">
+          @foreach($applications as $application)
           <div class="col-lg-6">
             <div class="box applicant">
-              <h4>Han Solo</h4>
-              <p><a href="javascript: void();" class="btn btn-outline-white-secondary btn-sm"> <i class="fa fa-download"></i>Download CV</a><a href="#" data-toggle="modal" data-target="#contact-modal" class="btn btn-outline-white-secondary btn-sm"><i class="fa fa-envelope"></i>Contact </a><a href="javascript: void();" class="btn btn-outline-white-secondary btn-sm"> <i class="fa fa-archive"></i>archive</a><a href="#" data-toggle="modal" data-target="#coverletter-modal" class="btn btn-outline-white-secondary btn-sm"><i class="fa fa-file-text-o"></i>See cover letter</a></p>
-              <p><span class="badge badge-info">Applied 21/10/2017</span> <span class="badge badge-success">Contacted 30/12/2017</span></p>
+              <h4>{{$application->name}} - {{$application->job_title}}</h4>
+              <p>
+                <a href="/asset/upload/{{$application->file}}" class="btn btn-outline-white-secondary btn-sm"> <i class="fa fa-download"></i>Download CV</a>
+                
+                
+              </p>
+
               <div class="d-flex justify-content-between">
-                <p class="intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                <div class="image"><img src="{{asset ('assets/img/person-1.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
+                <p class="intro">
+                  {{$application->email}}<br><br>
+                  {{$application->phone}}
+
+                </p>
+                
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="box applicant">
-              <h4>Luke Skywalker</h4>
-              <p><a href="javascript: void();" class="btn btn-outline-white-secondary btn-sm"> <i class="fa fa-download"></i>Download CV</a><a href="#" data-toggle="modal" data-target="#contact-modal" class="btn btn-outline-white-secondary btn-sm"><i class="fa fa-envelope"></i>Contact </a><a href="javascript: void();" class="btn btn-outline-white-secondary btn-sm"> <i class="fa fa-archive"></i>archive</a><a href="#" data-toggle="modal" data-target="#coverletter-modal" class="btn btn-outline-white-secondary btn-sm"><i class="fa fa-file-text-o"></i>See cover letter</a></p>
-              <p><span class="badge badge-info">Applied 22/10/2017</span> <span class="badge badge-success">Contacted 30/12/2017</span></p>
-              <div class="d-flex justify-content-between">
-                <p class="intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                <div class="image"><img src="{{asset ('assets/img/person-2.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="box applicant">
-              <h4>Princess Leia</h4>
-              <p><a href="javascript: void();" class="btn btn-outline-white-secondary btn-sm"> <i class="fa fa-download"></i>Download CV</a><a href="#" data-toggle="modal" data-target="#contact-modal" class="btn btn-outline-white-secondary btn-sm"><i class="fa fa-envelope"></i>Contact </a><a href="javascript: void();" class="btn btn-outline-white-secondary btn-sm"> <i class="fa fa-archive"></i>archive</a><a href="#" data-toggle="modal" data-target="#coverletter-modal" class="btn btn-outline-white-secondary btn-sm"><i class="fa fa-file-text-o"></i>See cover letter</a></p>
-              <p><span class="badge badge-info">Applied 30/10/2017</span> <span class="badge badge-success">Contacted 30/12/2017</span></p>
-              <div class="d-flex justify-content-between">
-                <p class="intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                <div class="image"><img src="{{asset ('assets/img/person-3.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="box applicant">
-              <h4>Jabba Hut</h4>
-              <p><a href="javascript: void();" class="btn btn-outline-white-secondary btn-sm"> <i class="fa fa-download"></i>Download CV</a><a href="#" data-toggle="modal" data-target="#contact-modal" class="btn btn-outline-white-secondary btn-sm"><i class="fa fa-envelope"></i>Contact </a><a href="javascript: void();" class="btn btn-outline-white-secondary btn-sm"> <i class="fa fa-archive"></i>archive</a><a href="#" data-toggle="modal" data-target="#coverletter-modal" class="btn btn-outline-white-secondary btn-sm"><i class="fa fa-file-text-o"></i>See cover letter</a></p>
-              <p><span class="badge badge-info">Applied 28/10/2017</span> <span class="badge badge-success">Contacted 30/12/2017</span></p>
-              <div class="d-flex justify-content-between">
-                <p class="intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                <div class="image"><img src="{{asset ('assets/img/person-4.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
-              </div>
-            </div>
-          </div>
+          @endforeach
+         
           <div class="col-lg-12">
             <div class="pages">
               <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-4 mb-4">
                 <ul class="pagination">
-                  <li>{{ $data->links() }}</li>
+                  <li>{{ $applications->links() }}</li>
                 </ul>
               </nav>
             </div>
             <p class="text-small text-muted">Some additional info for this screen about validity of the ads, etc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. </p>
-            <p class="text-small text-muted">Some additional info for this screen about validity of the ads, etc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. </p>
+            
           </div>
         </div>
       </div>

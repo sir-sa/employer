@@ -10,6 +10,8 @@ use App\Type;
 use App\Job;
 use DB;
 
+use App\Application;
+
 class PagesController extends Controller
 {
     /**
@@ -19,7 +21,7 @@ class PagesController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
+        $categories = Category::paginate(3);
         return view("pages.index", compact('categories'));
         //
     }
@@ -126,7 +128,8 @@ class PagesController extends Controller
 
     public function client_apply()
     {
-        return view("pages.client_applicants");
+        $applications = Application::paginate(4);
+        return view("pages.client_applicants", compact('applications'));
         //
     }
 
@@ -134,6 +137,7 @@ class PagesController extends Controller
     public function client_dash()
     {
         $apply = DB::table('applications')->count();
+        
         return view("pages.client_dashboard",compact('apply'));
         //
     }
