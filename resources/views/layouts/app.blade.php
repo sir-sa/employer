@@ -19,7 +19,10 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
  -->
     <!-- Styles -->
-     <link href="{{ asset('css/app.css') }}" rel="stylesheet"> 
+     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+     <!-- coded js --> 
+     <link href="{{ asset('js/script.js') }}" rel="stylesheet"> 
 
 
 
@@ -75,14 +78,14 @@
                   <a href="{{ route('categories.index')}}" class="dropdown-item">Job Listing</a>
                   
                   <a href="{{ route('about')}}" class="dropdown-item">About                </a>
-                  <a href="{{route('contact')}}" class="dropdown-item">Contact                </a>
+                  <a href="{{route('contact.index')}}" class="dropdown-item">Contact                </a>
                   <a href="{{ route('blog')}}" class="dropdown-item">Blog Listing                </a>
                   <a href="{{ route('posts')}}" class="dropdown-item">Blog Post                </a>
                   <a href="{{route('testimonials')}}" class="dropdown-item">Testimonials    </a>
                   
                   </div>
               </li>
-              <li class="nav-item">   <a href="{{route('contact')}}" class="nav-link">Contact</a></li>
+              <li class="nav-item">   <a href="{{route('contact.index')}}" class="nav-link">Contact</a></li>
 
 
                     <!-- Right Side Of Navbar -->
@@ -151,7 +154,7 @@
                 <li><a href="{{ route('category')}}">Jobs Listing</a></li>
                 <li><a href="">Job detail</a></li>
                 <li><a href="{{ route('about')}}">About</a></li>
-                <li><a href="{{ route('contact')}}">Contact</a></li>
+                <li><a href="{{ route('contact.index')}}">Contact</a></li>
                 <li><a href="{{ route('blog')}}">Blog listing</a></li>
                 <li><a href="{{ route('posts')}}">Blog Post</a></li>
                 <li><a href="{{ route('packages')}}">Pricing packages</a></li>
@@ -232,19 +235,19 @@
       <p class="text-muted text-small">Stylesheet switching is done via JavaScript and can cause a blink while page loads. This will not happen in your production code.</p>
     </div>
 
-    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <!-- <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
     <script type="text/javascript">
     $(document).ready(function () {
         $('.ckeditor').ckeditor();
     });
-   </script>
+   </script> -->
 
-   <script type="text/javascript">
+   <!-- <script type="text/javascript">
     CKEDITOR.replace('wysiwyg-editor', {
         filebrowserUploadUrl: "{{route('post.store')}}",
         filebrowserUploadMethod: 'POST'
     });
-   </script>
+   </script> -->
     <!-- JavaScript files-->
     <script src="{{ asset('assets/vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

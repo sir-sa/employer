@@ -64,36 +64,42 @@
             </div>
           </div>
           <div class="col-lg-8 mx-auto">
-            <form class="contact-form">
+            @if(session('status'))
+              <div class="alert alert-success">
+                {{session('status')}}
+              </div>
+            @endif
+            <form class="contact-form" method="POST" action="{{route('contact.store')}}">
+              @csrf
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="firstname">Firstname</label>
-                    <input id="firstname" type="text" class="form-control">
+                    <input id="firstname" type="text" class="form-control" required >
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="lastname">Lastname</label>
-                    <input id="lastname" type="text" class="form-control">
+                    <input id="lastname" type="text" class="form-control" required >
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="text" class="form-control">
+                    <input id="email" type="text" class="form-control" required >
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="subject">Subject</label>
-                    <input id="subject" type="text" class="form-control">
+                    <input id="subject" type="text" class="form-control" required >
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" class="form-control"></textarea>
+                    <textarea id="message" class="form-control" required ></textarea>
                   </div>
                 </div>
                 <div class="col-md-12 text-center">

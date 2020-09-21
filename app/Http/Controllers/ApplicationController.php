@@ -40,8 +40,8 @@ class ApplicationController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-         'name'=>'required',
-         'applicant_id'=>'required',
+         'name'=>'required|max:5',
+         'applicant_id'=>'required|min:7|max:9',
          'email'=>'required',
          'phone'=>'required',
          'address'=>'required',

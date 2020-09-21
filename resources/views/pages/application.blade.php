@@ -22,6 +22,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto">
+            <div id="error"></div>
             <form id="job-main-form" method="POST" action="{{route('applicants.store')}}" class="job-add-form" enctype="multipart/form-data">
               {{csrf_field()}}
 
@@ -35,33 +36,33 @@
               <div class="row">
                 <div class="col-lg-12 form-group">
                   <label for="name">Applicant Full Name</label>
-                  <input id="name" name="name" type="text" class="form-control">
+                  <input id="name" name="name" type="text" class="form-control" required>
                   <p class="help-block text-small">Applicant Need to be over the age of  18, Name provided should be the same in your National ID</p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-12 form-group">
                   <label for="applicant_id">Applicant id Number</label>
-                  <input id="applicant_id" name="applicant_id" type="text" min="6" max="8" class="form-control">
+                  <input id="applicant_id" name="applicant_id" type="text" min="6" max="8" class="form-control" required >
                   <p class="help-block text-small">Max of 8 Numbers</p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-12 form-group">
                   <label for="email">Applicant Email Address</label>
-                  <input id="email" name="email" type="text" class="form-control">
+                  <input id="email" name="email" type="text" class="form-control" required>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-12 form-group">
                   <label for="phone">Applicant Phone Number</label>
-                  <input id="phone" name="phone" type="text" class="form-control">
+                  <input id="phone" name="phone" type="text" class="form-control" required>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-12 form-group">
                   <label for="address">Applicant Postal Address</label>
-                  <input id="address" name="address" type="text" class="form-control">
+                  <input id="address" name="address" type="text" class="form-control" required>
                 </div>
               </div>
               <br><br>
@@ -82,7 +83,7 @@
               <div>
                 <div class="collg-12 form-group">
                   <label for="file">Applicant copy of CV</label>
-                  <input id="file" name="file" type="file" class="form-control">
+                  <input id="file" name="file" type="file" class="form-control" required>
                 </div>
               </div>
               <button type="submit" class="btn btn-outline-white-primary"> <i class="fa fa-magic"></i> Save information</button>

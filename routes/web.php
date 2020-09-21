@@ -32,7 +32,7 @@ Route::get('/client_applicant', 'PagesController@client_apply')-> name('client-a
 Route::get('/client_dashboard', 'PagesController@client_dash')-> name('client-dashboard');
 Route::get('/client_job', 'PagesController@client_job')-> name('client-job');
 Route::get('/client_register', 'PagesController@client_register')-> name('client-register');
-Route::get('/contacts', 'PagesController@contacts')-> name('contact');
+//Route::get('/contacts', 'PagesController@contacts')-> name('contact');
 Route::get('/details', 'PagesController@detail')-> name('details');
 Route::get('/packages', 'PagesController@package')-> name('packages');
 Route::get('/posts', 'PagesController@post')-> name('posts');
@@ -51,6 +51,8 @@ Route::resource('categories', 'CategoryController');
 Route::resource('jobtypes', 'JobtypeController');
 Route::resource('jobtags', 'TagsController');
 Route::resource('jobs', 'JobController');
+
+Route::resource('contact', 'ContactController');
 
 
 // this is handled by the USER
