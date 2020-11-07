@@ -56,7 +56,7 @@
               <div class="row">
                 <div class="col-lg-12 form-group">
                   <label for="phone">Applicant Phone Number</label>
-                  <input id="phone" name="phone" type="text" class="form-control" required>
+                  <input id="phone" name="phone" type="number" class="form-control" required>
                 </div>
               </div>
               <div class="row">

@@ -25,7 +25,6 @@
             <div class="table-responsive">
               <a href="">job types=></a>
               <ul class="table-responsive">
-                @if(!empty($tags))
               <table class="table table-striped table-hover table-client-dashboard"> 
                 <thead>
                   <tr>
@@ -36,22 +35,20 @@
                   </tr>
                 </thead>
                 <tbody>
-                  @forelse($tags as $tag)
+                  @forelse ($tags as $tag)
                   <tr>
                     <td>{{$tag->id}}</td>
                     <th><a href="">{{$tag->name}}</a>
                     </th>
                     
                     <td> 
-                      @can('manage-user')
+                      {{-- @can('manage-user') --}}
                         <form action="{{route('jobtags.destroy',$tag->id)}}" method="POST">
                           @csrf
                           @method('DELETE')
                            <button type="submit" class="btn btn-outline-white-secondary"> <i class="fa fa-times-circle-o"></i>Delete</button>
                          </form>
-                       @ndcan
-
-                      
+                       {{-- @ndcan --}}
                   </tr>
                   @empty
                   <li>No Job and tags</li>
@@ -60,7 +57,6 @@
                   
                 </tbody>
               </table>
-              @endif
               </ul>
             </div>
             

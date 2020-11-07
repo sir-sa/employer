@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Application;
+use Auth;
 
 class ApplicationController extends Controller
 {
@@ -40,8 +41,7 @@ class ApplicationController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-         'name'=>'required|max:5',
-         'applicant_id'=>'required|min:7|max:9',
+         'name'=>'required',
          'email'=>'required',
          'phone'=>'required',
          'address'=>'required',
@@ -64,7 +64,7 @@ class ApplicationController extends Controller
         }
 
         $data->name = $request->input('name');
-        $data->applicant_id = $request->input('applicant_id');
+        $data->applicant_id = Auth::id();
         $data->email = $request->input('email');
         $data->phone = $request->input('phone');
         $data->address = $request->input('address');

@@ -120,7 +120,7 @@ class PagesController extends Controller
 
     public function category()
     {
-        $categories = Category::all();
+        $categories = Category::paginate(10);
         return view("pages.category", compact('categories'));
         //
     }

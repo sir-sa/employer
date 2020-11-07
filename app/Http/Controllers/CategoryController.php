@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Job;
+use App\Tag;
 
 class CategoryController extends Controller
 {
