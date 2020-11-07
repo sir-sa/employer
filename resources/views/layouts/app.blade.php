@@ -68,7 +68,7 @@
                   <a href="{{ route('jobs.create')}}" class="dropdown-item">Post a new job  </a>
                   <a href="{{ route('categories.index')}}" class="dropdown-item">Jobs Category List </a>
                   <a href="{{ route('jobtypes.index')}}" class="dropdown-item">Job period  </a>
-                  <a href="{{ route('jobtags.index')}}" class="dropdown-item">Job skills required  </a>
+                 <!--  <a href="{{ route('jobtags.index')}}" class="dropdown-item">Job skills required  </a> -->
                 </div>
               </li>
                @endcan
@@ -138,40 +138,39 @@
     </div>
 
 
-     <footer class="footer">
+      <footer class="footer">
       <div class="footer__block">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-12 mb-5">
               <h4 class="h5">About Jobs</h4>
-              <p>Jobs is a <strong>Bootstrap 4 jobs board theme </strong> developed in the middle of Europe by <a href="http://ondrejsvestka.cz/">Ondrej Svestka</a></p>
+              <!-- <p>Jobs is a <strong>Bootstrap 4 jobs board theme </strong> developed in the middle of Europe by <a href="http://ondrejsvestka.cz/">Ondrej Svestka</a></p> -->
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. </p>
             </div>
             <div class="col-lg-4 col-md-6 mb-5">
-              <h4 class="h5">This Theme</h4>
+              <h4 class="h5">This Website</h4>
               <ul class="list-unstyled">
                 <li><a href="{{ route('index')}}">Home</a></li>
-                <li><a href="{{ route('category')}}">Jobs Listing</a></li>
+                <li><a href="{{ route('home')}}">Jobs Listing</a></li>
                 <li><a href="">Job detail</a></li>
                 <li><a href="{{ route('about')}}">About</a></li>
                 <li><a href="{{ route('contact.index')}}">Contact</a></li>
                 <li><a href="{{ route('blog')}}">Blog listing</a></li>
                 <li><a href="{{ route('posts')}}">Blog Post</a></li>
-                <li><a href="{{ route('packages')}}">Pricing packages</a></li>
+                <!-- <li><a href="{{ route('packages')}}">Pricing packages</a></li> -->
                 <li><a href="{{ route('testimonials')}}">Testimonials</a></li>
-                <li><a href="{{ route('text')}}">Text page</a></li>
-                <li><a href="{{ route('flaq')}}">FAQ</a></li>
+                 
               </ul>
             </div>
             <div class="col-lg-4 col-md-6">
               <h4 class="h5">Our offices</h4>
-              <h5>London</h5>
-              <p> Donec eleifend<br />libero at sagittis<br />mollis + 44 2556 789 8799</p>
-              <h5>Paris</h5>
-              <p> Donec eleifend<br />libero at sagittis<br />mollis + 41 2556 789 8799</p>
+              <h5>Nakuru</h5>
+              <p> Gaddaff<br />Nyeri<br />40-055</p>
+              <h5>Embu</h5>
+              <p> Jobuu<br />kangekini<br />30-056</p>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-4 col-md-6 mb-5">
               <h4 class="h5">Client zone</h4>
               <ul class="list-unstyled">
@@ -201,7 +200,7 @@
                 </div>
               </form>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="footer__copyright">
@@ -217,7 +216,7 @@
         </div>
       </div>
     </footer>
-    <button type="button" data-toggle="collapse" data-target="#style-switch" id="style-switch-button" class="btn btn-primary btn-sm hidden-xs hidden-sm"><i class="fa fa-cog fa-2x"></i></button>
+   <!--  <button type="button" data-toggle="collapse" data-target="#style-switch" id="style-switch-button" class="btn btn-primary btn-sm hidden-xs hidden-sm"><i class="fa fa-cog fa-2x"></i></button>
     <div id="style-switch" class="collapse">
       <h4 class="text-uppercase">Select theme colour</h4>
       <form class="mb-3">
@@ -234,7 +233,7 @@
       <p><img src="{{ asset('assets/img/template-mac.png')}}" alt="" class="img-fluid"></p>
       <p class="text-muted text-small">Stylesheet switching is done via JavaScript and can cause a blink while page loads. This will not happen in your production code.</p>
     </div>
-
+ -->
     <!-- <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
     <script type="text/javascript">
     $(document).ready(function () {
