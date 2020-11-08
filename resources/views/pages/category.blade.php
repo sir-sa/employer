@@ -34,7 +34,7 @@
     </section>
     <section>
       <div class="container">
-        <h3 class="heading">We have found <span class="accent">40</span> jobs</h3>
+        <h3 class="heading">We have found <span class="accent">{{$categories->count()}}</span> jobs</h3>
          <div class="col-lg-12 text-right mb-5"><a href="{{ route('categories.create')}}" class="btn btn-outline-white-primary"> <i class="fa fa-plus"></i>Add new Category</a></div>
          @foreach($categories as $category)
         <div class="job-listing job-listing--featured">
