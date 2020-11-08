@@ -11,7 +11,7 @@ class Application extends Model
     protected $fillable =['name', 'applicant_id', 'email', 'phone', 'address', 'job_title', 'file'];
 
     public function user(){
-    	return $this->belongsTo('App\User')
+    	return $this->belongsTo('App\User');
     }
 
 }
