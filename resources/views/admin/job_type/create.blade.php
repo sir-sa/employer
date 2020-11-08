@@ -28,6 +28,9 @@
                 <div class="col-lg-12 form-group">
                   <label for="name">New Job Job type</label>
                   <input id="name" name="name" type="text" class="form-control">
+                  @error('name')
+                    <span class="text-danger">{{ $message }}</span>
+                  @enderror
 
                   <p class="help-block text-small">Example of job categories include Web design, Network Engineering, Plumbing et cetra. Create a Category that aligns the request made by the client employers.</p>
                 </div>

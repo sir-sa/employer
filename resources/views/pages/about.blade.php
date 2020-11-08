@@ -61,8 +61,8 @@
         <div class="row team">
           <div class="col-lg-3 col-sm-6">
             <div class="team-member">
-              <div class="image"><img src="{{ asset('assets/img/person-1.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
-              <h3 class="h4"><a href="#">Han Solo</a></h3>
+              <div class="image"><img src="{{ asset('assets/img/ndete1.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
+              <h3 class="h4"><a href="#">Irene Wambui</a></h3>
               <p class="role">founder</p>
               <div class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" class="email"><i class="fa fa-envelope"></i></a></div>
               <div class="text">
@@ -74,8 +74,8 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="team-member">
-              <div class="image"><img src="{{ asset('assets/img/person-2.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
-              <h3 class="h4"><a href="#">Luke Skywalker</a></h3>
+              <div class="image"><img src="{{ asset('assets/img/ndete2.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
+              <h3 class="h4"><a href="#">Paul Karanja</a></h3>
               <p class="role">CTO</p>
               <div class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" class="email"><i class="fa fa-envelope"></i></a></div>
               <div class="text">
@@ -87,8 +87,8 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="team-member">
-              <div class="image"><img src="{{ asset('assets/img/person-3.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
-              <h3 class="h4"><a href="#">Princess Leia</a></h3>
+              <div class="image"><img src="{{ asset('assets/img/ndete4.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
+              <h3 class="h4"><a href="#">Jobuu</a></h3>
               <p class="role">Team Leader</p>
               <div class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" class="email"><i class="fa fa-envelope"></i></a></div>
               <div class="text">
@@ -100,7 +100,7 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="team-member">
-              <div class="image"><img src="{{ asset('assets/img/person-4.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
+              <div class="image"><img src="{{ asset('assets/img/ndete5.jpg')}}" alt="" class="img-fluid rounded-circle"></div>
               <h3 class="h4"><a href="#">Jabba Hut</a></h3>
               <p class="role">Lead developer</p>
               <div class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" class="email"><i class="fa fa-envelope"></i></a></div>

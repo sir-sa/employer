@@ -41,23 +41,23 @@
           <div class="row">
             <div class="col-md-12 col-lg-6">
               <div class="row">
-                
+
   <!-- <div class="col-2"><img src="/storage/asset/img/{{$category->image}}" alt="" class="img-fluid"></div> -->
                    <div class="col-2"><img src="{{('asset/img/'.$category->image)}}" alt="" class="img-fluid"></div>
-                
-                
+
+
                 <div class="col-10">
-                  
+
 
                   <h4 class="job__title">
                     <a href="{{route('categories.show', $category->id)}}">
-                      
+
                         {{$category->name}}
-                      
+
                     </a>
                   </h4>
                    <p class="job__company">
-                       
+
                     LoremIpsum
                   </p>
                 </div>
@@ -77,7 +77,7 @@
           <p class="load-more"><a href="#" class="mb-4 btn btn-outline-white-primary"><i class="fa fa-chevron-down"> </i>Load more</a></p>
           <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-4 mb-4">
             <ul class="pagination">
-             
+
               {{ $categories->links() }}
 
             </ul>

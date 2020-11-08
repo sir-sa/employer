@@ -14,29 +14,12 @@
           </ul>
         </nav>
         <h4 class="heading">Find a <span class="accent">job </span> you will <span class="accent">love</span></h4>
-        <form id="job-main-form" method="get" action="#" class="job-main-form">
-          <div class="controls">
-            <div class="row align-items-end">
-              <div class="col-sm-1 col-lg-2"></div>
-              <div class="col-sm-5 col-lg-4 form-group">
-                <label for="profession">Profession</label>
-                <input type="text" id="profession" name="profession" placeholder="Profession you are looking for" class="form-control">
-              </div>
-              <div class="col-sm-5 col-lg-4 form-group">
-                <label for="location">Location</label>
-                <input type="text" id="location" name="location" placeholder="Any particular location?" value="Bay Area" class="form-control">
-              </div>
-              <div class="col-sm-1 col-lg-2 form-group">
-                <button type="submit" name="name" class="btn btn-outline-white-primary job-main-form__button"><i class="fa fa-search"></i></button>
-              </div>
-            </div>
-          </div>
-        </form>
+        
       </div>
     </section>
     <section>
       <div class="container">
-        <h3 class="heading">We have found <span class="accent">40</span> jobs</h3>
+        <h3 class="heading">We have found <span class="accent">the following</span> jobs</h3>
          <div class="col-lg-12 text-right mb-5"><a href="{{ route('categories.create')}}" class="btn btn-outline-white-primary"> <i class="fa fa-plus"></i>Add new Category</a></div>
          @foreach($categories as $category)
         <div class="job-listing job-listing--featured">
@@ -93,7 +76,7 @@
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="box-image-text bg-visible full-height">
               <div class="top"><a href="{{route('details')}}">
-                  <div class="image"><img src="{{ asset('assets/img/featured1.jpg')}}" alt="" class="img-fluid"></div>
+                  <div class="image"><img src="{{ asset('assets/img/ndete1.jpg')}}" alt="" class="img-fluid"></div>
                   <div class="bg"></div>
                   <div class="logo"><img src="{{ asset('assets/img/company-1.png')}}" alt="" style="max-width: 80px;"></div></a></div>
               <div class="content">
@@ -106,7 +89,7 @@
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="box-image-text bg-visible full-height">
               <div class="top"><a href="{{route('details')}}">
-                  <div class="image"><img src="{{ asset('assets/img/featured2.jpg')}}" alt="" class="img-fluid"></div>
+                  <div class="image"><img src="{{ asset('assets/img/ndete3.jpg')}}" alt="" class="img-fluid"></div>
                   <div class="bg"></div>
                   <div class="logo"><img src="{{ asset('assets/img/company-3.png')}}" alt="" style="max-width: 80px;"></div></a></div>
               <div class="content">
@@ -119,7 +102,7 @@
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="box-image-text bg-visible full-height">
               <div class="top"><a href="{{route('details')}}">
-                  <div class="image"><img src="{{ asset('assets/img/featured3.jpg')}}" alt="" class="img-fluid"></div>
+                  <div class="image"><img src="{{ asset('assets/img/ndete4.jpg')}}" alt="" class="img-fluid"></div>
                   <div class="bg"></div>
                   <div class="logo"><img src="{{ asset('assets/img/company-2.png')}}" alt="" style="max-width: 80px;"></div></a></div>
               <div class="content">

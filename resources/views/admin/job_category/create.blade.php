@@ -29,8 +29,16 @@
                   <label for="name">New Job Category</label>
                   <input id="name" name="name" type="text" class="form-control">
 
+                  @error('name')
+                    <span class="text-danger">{{ $message }}</span>
+                  @enderror
+
                   <label for="image">Logo image</label>
                   <input id="image" name="image" type="file" class="form-control">
+
+                  @error('image')
+                    <span class="text-danger">{{ $message }}</span>
+                  @enderror
 
                   <p class="help-block text-small">Example of job categories include Web design, Network Engineering, Plumbing et cetra. Create a Category that aligns the request made by the client employers.</p>
                 </div>

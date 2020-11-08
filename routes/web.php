@@ -58,6 +58,9 @@ Route::resource('contact', 'ContactController');
 // this is handled by the USER
 Route::resource('applicants', 'ApplicationController');
 
+// or
+Route::resource('apply', 'ApplyController');
+
 //this is the posts route
 Route::resource('post', 'PostController');
 

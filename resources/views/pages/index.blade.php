@@ -27,7 +27,7 @@
                 <div class="col-lg-4 mb-5 mb-lg-0">
                   <div class="box-image-text bg-visible full-height">
                     <div class="top"><a href="detail.html">
-                        <div class="image"><img src="{{ asset('assets/img/featured1.jpg')}}" alt="" class="img-fluid"></div>
+                        <div class="image"><img src="{{ asset('assets/img/ndete1.jpg')}}" alt="" class="img-fluid"></div>
                         <div class="bg"></div>
                         <div class="logo"><img src="{{ asset('assets//img/company-1.png')}}" alt="" style="max-width: 80px;"></div></a></div>
                     <div class="content">
@@ -88,8 +88,8 @@
                   </div>
                   <div class="bottom">
                     <div class="icon"><i class="fa fa-quote-left"></i></div>
-                    <div class="name-picture"><img alt="" src="{{asset('assets/img/person-1.jpg')}}">
-                      <h5>John McIntyre</h5>
+                    <div class="name-picture"><img alt="" src="{{asset('assets/img/ndete1.jpg')}}">
+                      <h5>Karanja Paul</h5>
                       <p>CEO, TransTech</p>
                     </div>
                   </div>
@@ -102,8 +102,8 @@
                   </div>
                   <div class="bottom">
                     <div class="icon"><i class="fa fa-quote-left"></i></div>
-                    <div class="name-picture"><img alt="" src="{{asset('assets/img/person-2.jpg')}}">
-                      <h5>John McIntyre</h5>
+                    <div class="name-picture"><img alt="" src="{{asset('assets/img/ndete2.jpg')}}">
+                      <h5>Jobuu</h5>
                       <p>CEO, TransTech</p>
                     </div>
                   </div>
@@ -117,8 +117,8 @@
                   </div>
                   <div class="bottom">
                     <div class="icon"><i class="fa fa-quote-left"></i></div>
-                    <div class="name-picture"><img alt="" src="{{asset('assets/img/person-3.png')}}">
-                      <h5>John McIntyre</h5>
+                    <div class="name-picture"><img alt="" src="{{asset('assets/img/ndete3.png')}}">
+                      <h5>Martin Irungu</h5>
                       <p>CEO, TransTech</p>
                     </div>
                   </div>
@@ -131,8 +131,8 @@
                   </div>
                   <div class="bottom">
                     <div class="icon"><i class="fa fa-quote-left"></i></div>
-                    <div class="name-picture"><img alt="" src="{{ asset('assets/img/person-4.jpg')}}">
-                      <h5>John McIntyre</h5>
+                    <div class="name-picture"><img alt="" src="{{ asset('assets/img/ndete4.jpg')}}">
+                      <h5>Irene Wambui</h5>
                       <p>CEO, TransTech</p>
                     </div>
                   </div>
@@ -145,8 +145,8 @@
                   </div>
                   <div class="bottom">
                     <div class="icon"><i class="fa fa-quote-left"></i></div>
-                    <div class="name-picture"><img alt="" src="{{ asset('assets/img/person-4.jpg')}}">
-                      <h5>John McIntyre</h5>
+                    <div class="name-picture"><img alt="" src="{{ asset('assets/img/ndete5.jpg')}}">
+                      <h5>Chris</h5>
                       <p>CEO, TransTech</p>
                     </div>
                   </div>
@@ -182,7 +182,7 @@
         <div id="blog-homepage" class="row">
           <div class="col-md-6">
             <div class="post">
-              <div class="image"><a href="{{ route('posts')}}"><img src="{{ asset('assets/img/blog1.jpg')}}" alt="" class="img-fluid"></a></div>
+              <div class="image"><a href="{{ route('posts')}}"><img src="{{ asset('assets/img/ndete5.jpg')}}" alt="" class="img-fluid"></a></div>
               <h4><a href="post.html">Education in the IT</a></h4>
               <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
               <p class="read-more"><a href="{{ route('posts')}}" class="btn btn-outline-white-primary">Continue reading</a></p>
@@ -190,7 +190,7 @@
           </div>
           <div class="col-md-6">
             <div class="post">
-              <div class="image"><a href="{{ route('posts')}}"><img src="{{ asset('assets/img/blog2.jpg')}}" alt="" class="img-fluid"></a></div>
+              <div class="image"><a href="{{ route('posts')}}"><img src="{{ asset('assets/img/ndete4.jpg')}}" alt="" class="img-fluid"></a></div>
               <h4><a href="post.html">Best books for personal development</a></h4>
               <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
               <p class="read-more"><a href="{{ route('posts')}}" class="btn btn-outline-white-primary">Continue reading</a></p>

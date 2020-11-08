@@ -32,8 +32,8 @@
                     <th>Phone Number</th>
                     <th>Address</th>
                     <th>Job applied</th>
-                    <th> Viw CV</th>
-                    <th> Download CV</th>
+                    <th> Viw CV and download</th>
+                    <!-- <th> Download CV</th> -->
                     <th>Actions</th>
                   </tr>
                 </thead>
@@ -49,9 +49,9 @@
                     <td> <span class="">{{$file->phone}}</span></td>
                     <td> <span class="">{{$file->address}}</span></td>
                     <td> <span class="">{{$file->job_title}}</span></td>
-                    <td> <span class=""> <a href="{{route('applicants.show',$file->id)}}">view CV</a></span></td>
+                    <td> <span class=""> <a href="{{route('applicants.show',$file->id)}}">view CV and download</a></span></td>
                     <td> <span class=""> 
-                      <a href="/asset/upload/{{$file->file}}">Download CV</a></span></td>
+                      <!-- <a href="{{ asset('cvs/'.$file->file) }}" download="{{ $file->name}}.pdf">Download CV</a></span></td> -->
 
                     
                     <td> 

@@ -158,7 +158,7 @@
      @yield('content')
      </main>
 
-    <footer class="footer">
+<footer class="footer">
       <div class="footer__block">
         <div class="container">
           <div class="row">
